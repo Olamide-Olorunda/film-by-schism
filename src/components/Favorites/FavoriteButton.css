@@ -1,0 +1,35 @@
+.favorite-btn {
+  background: rgba(109, 109, 110, 0.7);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s;
+}
+
+.favorite-btn.active {
+  background: #e50914;
+}
+
+.favorite-btn.animate {
+  animation: pulse 0.5s;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.favorite-btn i {
+  transition: all 0.3s;
+}
+
+.favorite-btn:hover {
+  background: #e50914;
+}
